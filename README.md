@@ -1,13 +1,12 @@
-# Gradio & Hugging Face Integration Tutorial
+# Gradio & Hugging Face Tutorial
 
 ## Tutorial Overview
-This repository contains a step-by-step tutorial designed to introduce developers to **Gradio**, a Python library for creating rapid machine learning demos. The tutorial is divided into two distinct sections: first, mastering custom layouts (using Rows, Columns, and Blocks) by building a creative "Intergalactic Passport Creator," and second, integrating deep learning models by connecting the **Hugging Face** `transformers` library to a frontend interface. The goal is to demonstrate how easily Python scripts can be transformed into interactive web applications.
+This tutorial explores how to build interactive web applications for machine learning using **Gradio**. We demonstrate how to use `gr.Blocks` to create complex layouts with **Rows** and **Columns**, integrate interactive **Sliders** and **Image** inputs, and connect deep learning models to the UI.
 
-## Model & App Description
-The deep learning portion of this tutorial features a **Sentiment Analysis App** powered by the **DistilBERT base uncased** model (via the Hugging Face `sentiment-analysis` pipeline). DistilBERT is a smaller, faster, cheaper, and lighter version of BERT, pre-trained on the same corpus. The app takes raw text input from the user, processes it through the model to detect emotional tone (POSITIVE or NEGATIVE), and returns the confidence score, demonstrating a practical use case for NLP integration in web apps.
+## The App & Model
+The application features a dual-purpose dashboard:
+1. **Intergalactic Passport Creator:** A custom UI layout using Gradio's layout components to process biometric images and user metadata.
+2. **AI Sentiment Analyst:** Integrated with the Hugging Face `transformers` library using the **DistilBERT** model (`distilbert-base-uncased-finetuned-sst-2-english`). This model is a light, fast version of BERT designed to classify text sentiment with high accuracy.
 
 ## How to Run
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/YOUR_USERNAME/gradio-tutorial.git](https://github.com/YOUR_USERNAME/gradio-tutorial.git)
-   cd gradio-tutorial
+Click the `gradio_tutorial.ipynb` file in this repository and select "Open in Colab" to run the interactive demo.
